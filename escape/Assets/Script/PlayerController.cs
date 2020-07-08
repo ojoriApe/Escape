@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private AudioSource playerAudio;
 
     private bool isDead = false;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetAxis("Horizontal") == 0)
         {
             animator.SetTrigger("Idle");
+            Vector2 vec = playerRigidbody.velocity;
+            playerRigidbody.AddForce(-vec*6);
             playerRigidbody.velocity = Vector2.zero;
         }
 

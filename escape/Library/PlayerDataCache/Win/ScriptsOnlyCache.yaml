@@ -653,4 +653,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/kgi12/Desktop/\uAC1C\uBC1C/\uC608\uC81C\uC644\uC131/Escape/escape.exe"
+  playerPath: "C:/Users/kgi12/Desktop/\uAC1C\uBC1C/\uC644\uC131\uD488/Escape/escape.exe"

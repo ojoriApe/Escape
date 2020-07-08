@@ -617,8 +617,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9664f1499d66ef4eb372dca2766307b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 6
 --- !u!1 &163924822
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,7 +910,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444558924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.35, y: -1.48, z: 0}
+  m_LocalPosition: {x: 3.3, y: -1.26, z: 0}
   m_LocalScale: {x: 0.21058543, y: 0.20498645, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1150,7 +1150,7 @@ MonoBehaviour:
     type: 3}
   count: 3
   timeBetSpawnMin: 0.3
-  timeBetSpawnMax: 0.7
+  timeBetSpawnMax: 0.8
   yPos: 5
   xMin: -2.6
   xMax: 2.6
@@ -1345,7 +1345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -8.434, y: 1.93}
+  m_AnchoredPosition: {x: -8.4339905, y: 1.9299927}
   m_SizeDelta: {x: 16.867918, y: 3.8600512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700583797
