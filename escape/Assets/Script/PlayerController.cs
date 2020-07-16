@@ -35,22 +35,18 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Run");
             float xInput = Input.GetAxis("Horizontal");
 
-            float xSpeed = xInput * speed;
+            float xSpeed = xInput * speed * 0.08f;
 
             Vector2 newVelocity = new Vector2(xSpeed, 0);
-            playerRigidbody.velocity = newVelocity;
-
+            //playerRigidbody.velocity = newVelocity;
+            transform.Translate(newVelocity);  //문제 : 벽을 뚫고 가버림
 
         }
         else if (Input.GetAxis("Horizontal") == 0)
         {
             animator.SetTrigger("Idle");
-            Vector2 vec = playerRigidbody.velocity;
-            playerRigidbody.AddForce(-vec*6);
-            playerRigidbody.velocity = Vector2.zero;
+           
         }
-
-        
 
     }
 
